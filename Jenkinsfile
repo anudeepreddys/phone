@@ -7,7 +7,7 @@ pipeline {
     stage('Deploy to DOcker') {
       steps {
         sh "docker login -u anudeepreddys -p dckr_pat_Rakxneo2JbqnrvkvfbVkCxvNwXk"
-        sh "kubectl apply -f "
+        sh "kubectl apply -f sample_app.yaml"
       }
     }
   }
